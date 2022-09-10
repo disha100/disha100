@@ -1,5 +1,5 @@
 ### Hi, I'm Disha 👋
-- 🔭 I’m currently working on java
+
 - 🌱 I’m currently learning javascript 
 - 📫 How to reach me: 
      goeld426@gmail.com
