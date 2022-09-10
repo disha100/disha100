@@ -4,7 +4,7 @@ if(a==null){
 console.log(false);
 }
 else{
-    console.log("yes");
+    console.log("yes ");
 }
 //
 false
