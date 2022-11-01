@@ -13,4 +13,4 @@ kind of steps followed:
 * on consuming food  snake-length must increase.
 
 
-## to make animation use setInterval function in javascript.
+## to make animation use setInterval function in javascript .
