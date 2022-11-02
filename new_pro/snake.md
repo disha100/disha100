@@ -4,7 +4,7 @@ kind of steps followed:
 
 * a snake body.
 
-* detect a press key(4 arrow keys).
+* detect a press key (4 arrow keys).
 
 * audio 
 
