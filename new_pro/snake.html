@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snake Land</title>
+    <link rel="stylesheet" href="snake.css">
+
 </head>
 <body>
-<canvas id="mycanvas" width="520" height="520" style="margin: top 30px;display:block;padding-left: 0;padding-right: 0;margin-left: auto;margin-right: auto;"></canvas>
 
-<marquee ><h1> Welcome to the Snake Game !!</h1></marquee>
+<div class="body">
+    <div id="scoreBox">Score: 2</div>
+    <div id="hiscoreBox">HiScore: 2</div>
+    <div id="board"><div class="head" style="grid-row-start: 15; grid-column-start: 13;"></div><div class="food" style="grid-row-start: 15; grid-column-start: 9;"></div></div>
+</div>
+<!-- <marquee ><h1> Welcome to the Snake Game !!</h1></marquee> -->
 <script src="snake.js"></script>
 </body>
 </html>
