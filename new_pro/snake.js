@@ -3,7 +3,7 @@ const foodSound = new Audio('sound/food.mp3');
 const gameOverSound = new Audio('sound/gameover.mp3');
 const moveSound = new Audio('sound/move.mp3');
 
-let speed = 9;
+let speed = 10;
 let score = 0;
 let lastPaintTime = 0;
 let snakeArr = [
