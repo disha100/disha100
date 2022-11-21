@@ -26,7 +26,7 @@ const calculateBill=()=>
         const total = tipAmount+bill
         const perPersonTotal = total/numberOfPeople
     //perPersonTotalDiv.innerText =` $${perPersonTotal.toLocaleString('en-US')}`
-        perPersonTotalDiv.innerText =` ${perPersonTotal.toLocaleString('en-IN')}`
+        perPersonTotalDiv.innerText =` ₹${perPersonTotal.toLocaleString('en-IN')}`
 
 }
 
