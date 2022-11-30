@@ -6,7 +6,7 @@ html, body{
     background-color: #1c1c1c;
 }
 
-#heading{
+/* #heading{
      background-image: linear-gradient(to top,rgba(206, 93, 136, 0),rgb(157, 85, 120,1));
       width: 100%;
     height: 20%;
@@ -15,11 +15,11 @@ html, body{
     color: blanchedalmond;
     font-weight: 70x;
     border-style: groove;
-}
+} */
 
 .wrapper{
     background: #1c1c1c;
-    color: white;
+    color: #667EEA;
     display: flex;
     align-items: center;
     justify-content: center;
