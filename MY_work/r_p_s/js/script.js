@@ -1,4 +1,7 @@
+const totalScore = {computerChoice: 0,playerChoice: 0}
+
 //only five functions
+
 function getComputerChoice(){
 //select randomly between rock, paper and scissors
 const rpsChoice = ['Rock','Paper','Scissors']
@@ -42,7 +45,10 @@ console.log({playerChoice})
 const computerChoice = getComputerChoice()
 console.log({computerChoice})
 const score= getResult(playerChoice,computerChoice)
+totalScore['playerScore'] += score
 console.log({score})
+console.log(totalScore)
+
 }
 
 function playGame(){
