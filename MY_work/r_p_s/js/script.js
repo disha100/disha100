@@ -37,15 +37,21 @@ function showresult(score,playerChoice,computerChoice){
 
 }
 
-function onClickRPS(playerchoice){
-
+function onClickRPS(playerChoice){
+console.log({playerChoice})
+const computerChoice = getComputerChoice()
+console.log({computerChoice})
+const score= getResult(playerChoice,computerChoice)
+console.log({score})
 }
 
 function playGame(){
 //select all the rps buttons using query selectors
 const rpsButtons = document.querySelectorAll('.rpsButton')
 rpsButtons[0].onclick = ( ) => console.log(rpsButtons[0].value) 
-
+rpsButtons.forEach(rpsButton => {
+        rpsButton.onclick=()=>onClickRPS(rpsButton.value)
+})
 }
 
 function endGame(){
