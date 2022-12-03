@@ -36,18 +36,34 @@ return score;
 }
 
 function showresult(score,playerChoice,computerChoice){
+        const resultDiv = document.getElementById('result')
+        const handsDiv = document.getElementById('hands')
+        const playerScoreDiv = document.getElementById('player-score')
+
+if(score==-1)
+{
+ resultDiv.innerText = 'You Lose!'
+} else if(score==0){
+        resultDiv.innerText = 'Its s tie!'
+}else{
+        resultDiv.innerText = 'You Won!'
+}
+
+
+handsDiv.innerText= `🧑‍🦰${playerChoice} vs 🤖${computerChoice}`
+playerScoreDiv.innerText = `Your score:${totalScore['playerScore']}`
 
 
 }
 
 function onClickRPS(playerChoice){
-console.log({playerChoice})
+
 const computerChoice = getComputerChoice()
-console.log({computerChoice})
+
+
 const score= getResult(playerChoice,computerChoice)
 totalScore['playerScore'] += score
-console.log({score})
-console.log(totalScore)
+showresult(score,playerChoice,computerChoice)
 
 }
 
@@ -58,9 +74,16 @@ rpsButtons[0].onclick = ( ) => console.log(rpsButtons[0].value)
 rpsButtons.forEach(rpsButton => {
         rpsButton.onclick=()=>onClickRPS(rpsButton.value)
 })
+let endGamebutton = document.getElementById('endGameButton')
+endGamebutton.onclick = () => endGame()
 }
 
 function endGame(){
-
+ let playerScore = document.getElementById('player-score')
+ let hands = document.getElementById('hands')
+ let result = document.getElementById('result')
+ playerScore.innerText = ""
+ hands.innerText=""
+ result.innerText = ""
 }
  playGame()
