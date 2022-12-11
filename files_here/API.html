@@ -15,8 +15,39 @@
     <p> Enter a no. and click the ok button.</p>
     <input type="number" id="id1" min="30" max="100" required>
     <button onclick="myFunction()">OK</button>
-    <p id="loc"></p>
+    <p id="loc1"></p>
+    <p> Enter a no. and click the ok button.</p>
+    <input type="number" id="id2"  max="100" required>
+    <button onclick="flow()">OK</button>
+    <p id="loc2"></p>
 
+    <!-- //web history API -->
+
+    <button onclick="backBtn()">Previous</button>
+
+    <button onclick="goBack()">Go back two pages</button>
+    <p id="demo"></p>
+
+    <p> Count Numbers: <output id="result"></output> </p>
+    <button onclick="startWorker()">Start</button>
+    <button onclick="stopWorker()">Stop</button>
+    <script>
+        let w;
+        
+        function startWorker() {
+          if (typeof(w) == "undefined") {
+            w = new Worker("demo_workers.js");
+          }
+          w.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+          };
+        }
+        
+        function stopWorker() {
+          w.terminate();
+          w = undefined;
+        }
+        </script>
     <script src="API.js"></script>
 </body>
 </html>
