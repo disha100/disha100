@@ -1,0 +1,9 @@
+bill total input
+tip input
+no. of people 
+per person total
+
+//preconnect///
+Consider adding preconnect or dns- prefetch resource hints to establish early connections to important third-party origins.
+
+<link rel="preconnect"> informs the browser that your page intends to establish a connection to another origin, and that you'd like the process to start as soon as possible.

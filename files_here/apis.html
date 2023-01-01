@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Fetch a file to change this text.</p>
+<script>
+
+let file = "fetch_info.txt"
+
+fetch (file)
+.then(x => x.text())
+.then(y => document.getElementById("demo").innerHTML = y);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>API is application programming interface.</p>
+    Click the button below to know your coordinates.
+    <br>
+    <button onclick="getLocation()">Click</button>
+    <p id="api"></p>
+    <p> Enter a no. and click the ok button.</p>
+    <input type="number" id="id1" min="30" max="100" required>
+    <button onclick="myFunction()">OK</button>
+    <p id="loc1"></p>
+    <p> Enter a no. and click the ok button.</p>
+    <input type="number" id="id2"  max="100" required>
+    <button onclick="flow()">OK</button>
+    <p id="loc2"></p>
+
+    <!-- //web history API -->
+
+    <button onclick="backBtn()">Previous</button>
+
+    <button onclick="goBack()">Go back two pages</button>
+    <p id="demo"></p>
+
+    <p> Count Numbers: <output id="result"></output> </p>
+    <button onclick="startWorker()">Start</button>
+    <button onclick="stopWorker()">Stop</button>
+    <script>
+        let w;
+        
+        function startWorker() {
+          if (typeof(w) == "undefined") {
+            w = new Worker("demo_workers.js");
+          }
+          w.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+          };
+        }
+        
+        function stopWorker() {
+          w.terminate();
+          w = undefined;
+        }
+        </script>
+    <script src="API.js"></script>
+</body>
+</html>
