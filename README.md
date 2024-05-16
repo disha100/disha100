@@ -8,7 +8,7 @@
 
 - 🌱 I’m currently learning javascript 
 - 📫 How to reach me: 
-     goeld426@gmail.com
+     dishagoel083@gmail.com
 - ⚡  fact: 
           EVERYDAY IS A LEARNING DAY! 😄 😄 😄 
           
