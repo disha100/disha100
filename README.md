@@ -24,7 +24,7 @@
 📊 My Github Stats 📊
 </h2>
          <div align ="center">
-    <a href="http://www.github.com/disha100"/><img alt="TYP Github Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=disha100&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" width = "70%"/></a> </div>     
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Disha100&theme=tokyonight&hide_border=true" alt="Disha100's GitHub Stats" />
 <!--  [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=disha100&theme=dark&fire=DD2727)](https://git.io/streak-stats) -->
  
 
