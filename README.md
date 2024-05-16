@@ -6,7 +6,7 @@
  -->
 
 
-- 🌱 I’m currently learning javascript 
+
 - 📫 How to reach me: 
      dishagoel083@gmail.com
 - ⚡  fact: 
